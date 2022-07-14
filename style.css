@@ -24,8 +24,22 @@ button,
 button {
     color: #f9faf8;
     border-radius: 7px;
-    padding: 5px 10px;
-    max-width: 71.42px;
+    padding: 7px 20px;
+    font-weight: 700;
+    white-space: nowrap;
+   
+    
+}
+
+.container button {
+    border: #1F2937;
+}
+
+.bottom button {
+    border: 1px solid #f9faf8;
+    
+    max-height: 29px;
+    
 }
 
 .main {
@@ -48,14 +62,24 @@ button {
 
 .info-header {
     color: #1F2937;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 800;
 }
 
 .quote {
     color: #1F2937;
-    font-size: 36px;
+    font-size: 28px;
     font-style: italic;
+}
+
+.quoted {
+   color: #1F2937;
+   font-size: 20px;
+   font-weight: 750; 
+}
+
+.bottom {
+    color: #f9faf8;
 }
 
 .header,
@@ -66,18 +90,21 @@ button {
 
 .link-container {
     flex: auto;
-    justify-content: flex-end;
+    
     gap: 20px;
 }
 
 .logo-container {
     flex: auto;
-    align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-end;
+    
+    
 
 }
 
 .header {
+    justify-content: center;
+    align-items: center;
     padding-top: 15px;
     gap: 250px;
     padding-left: 250px;
@@ -86,14 +113,16 @@ button {
 
 .top{
     display: flex;
-    flex: none;
-    justify-content: space-between;
+    flex: auto;
+    justify-content: center;
     column-gap: 40px;
     padding-top: 100px;
     padding-bottom: 100px;
     padding-left: 250px;
     padding-right: 250px;
 }
+
+
 
 div.main {
     max-width: 350px;
@@ -106,10 +135,125 @@ p.hero-secondary {
 
 
 .top .container {
-    display: flex;
     flex-direction: column;
     
 }
 
+.info-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
 
+.upper-middle .container {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    padding-bottom: 60px;
+    padding-top: 15px;
+    
+}
 
+.container img {
+    object-fit: cover;
+    border: 3px solid #3882F6;
+    border-radius: 8px;
+    width: 130px;
+    height: 130px;
+}
+
+.image-info {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 150px;
+    
+}
+
+.image-info div {
+    text-align: center;
+    padding-top: 8px;
+}
+
+.lower-middle {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px
+
+}
+
+.quote {
+    width: 630px;
+    margin: 0;
+}
+
+.quoted {
+    width: 630px;
+    text-align: right;
+}
+
+.action-text div {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.action-text p {
+    font-size: 14px;
+    margin-top: 3px;
+    margin-bottom: 0;
+}
+
+.action-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+
+.bottom {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+    gap: 100px;
+    max-width: 600px;
+    border-radius: 8px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 85px;
+    padding-right: 85px;
+    
+}
+
+.container-bottom {
+    display: flex;
+    flex: auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+
+.footer div {
+    font-size: 15px;
+}
